@@ -10,7 +10,7 @@ This is the "app" repo that conains the Kubernetes deployment and services that 
 #### Instructions
 
 The `app.yaml`file is represents the containerized application to be deployed to the EKS Cluster.
-Other `yaml` files represent kubernetes services that are required
+Other `yaml` files represent Kubernetes services that are required
 
 Any changes made to any `yaml` file need to be applied using the following command:
 
