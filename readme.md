@@ -14,7 +14,7 @@ Other `yaml` files represent Kubernetes services that are required
 
 Any changes made to any `yaml` file need to be applied using the following command:
 
-`kubectl apply -f <path_to_file.yaml>`
+`kubectl apply -f <file.yaml>`
 
 Those files need to be applied by the`kubectl apply` command at least once, so the app and the load balancers are created/deployed to the EKS Cluster, and thus making the app accesible over the internet.
 
