@@ -26,7 +26,7 @@ jobs:
           cat ${{ secrets.KUBE_CONFIG }} | base64 --decode > ~/.kube/config
       
       # - name: Specify Kubernetes context
-        # run: kubectl config use-context ${{ secrets.KUBE_CONTEXT }}
+        # run: kubectl config use-context $ {{ secrets.KUBE_CONTEXT }}
         # This is the (AWS cluster) context name from the kube config file
 
       - name: Apply changes
