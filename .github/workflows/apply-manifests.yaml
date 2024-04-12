@@ -23,7 +23,7 @@ jobs:
       - name: Create kube config file
         run: |
           mkdir ~/.kube
-          cat ${{ secrets.KUBE_CONFIG }} > ~/.kube/config
+          cat ${{ secrets.KUBE_CONFIG }} | base64 --decode > ~/.kube/config
       
       - name: Specify Kubernetes context
         run: kubectl config use-context ${{ secrets.KUBE_CONTEXT }}
