@@ -30,4 +30,4 @@ jobs:
         # This is the (AWS cluster) context name from the kube config file
 
       - name: Apply changes
-        run: kubectl apply -f load-balancer.yaml -f app.yaml
+        run: kubectl apply -f ./
